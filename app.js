@@ -84,7 +84,9 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 });
 
 let usercard = document.getElementById("usercard");
+
 let p = document.createElement("p");
+
 p.innerText = '${tg.initDataUnsafe.first_name}'
 ${tg.initDataUnsafe.user.id}
 
