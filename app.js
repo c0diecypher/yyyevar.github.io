@@ -22,7 +22,8 @@ btn1.addEventListener("click", function(){
     item = "1";
     tg.MainButton.show();
   }
-  
+});
+
 btn2.addEventListener("click", function(){
   if (tg.MainButton.isVisible) {
       tg.MainButton.hide();
@@ -32,6 +33,7 @@ btn2.addEventListener("click", function(){
     item = "2";
     tg.MainButton.show();
   }
+});
 
 btn3.addEventListener("click", function(){
   if (tg.MainButton.isVisible) {
@@ -42,6 +44,7 @@ btn3.addEventListener("click", function(){
     item = "3";
     tg.MainButton.show();
   }
+});
 
 btn4.addEventListener("click", function(){
   if (tg.MainButton.isVisible) {
@@ -52,6 +55,7 @@ btn4.addEventListener("click", function(){
     item = "4";
     tg.MainButton.show();
   }
+});
 
 btn5.addEventListener("click", function(){
   if (tg.MainButton.isVisible) {
@@ -62,6 +66,7 @@ btn5.addEventListener("click", function(){
     item = "5";
     tg.MainButton.show();
   }
+});
 
 btn6.addEventListener("click", function(){
   if (tg.MainButton.isVisible) {
@@ -72,3 +77,8 @@ btn6.addEventListener("click", function(){
     item = "6";
     tg.MainButton.show();
   }
+});
+
+Telegram.WebApp.onEvent("mainButtonClicked", function(){
+  tg.sendData(item);
+});
