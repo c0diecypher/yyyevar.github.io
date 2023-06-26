@@ -1,7 +1,7 @@
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.types.web_app_info import WebAppInfo
 
-bot = Bot('5847321055:AAHbixqAgBnYSFTKE2cWqmnf7DJ8mr9pFKo')
+bot = Bot('tokenapi')
 dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start'])
