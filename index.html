@@ -9,54 +9,48 @@
     <title>MyCatalog</title>
     <link rel="stylesheet" href="yyyevar.github.io/style.css" type="text/css" />
     <style>
-        @import url('https://imgur.com/ciqZm0z');
-
-        * {
-            margin: 0
-            padding: 0
-            box_sizing: border-box;
-        }
-
         body {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 200;
-            color: var(--th-theme-text-color);
-            background: var(--tg-theme-bg-color);
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        color: var(--tg-theme-text-color);
+        background: var(--tg-theme-bg-color);
         }
-        main {
-            width: 100%;
-            padding: 20px;
-            text-align: centre;
+        
+        .container {
+        max-width: 390px
         }
-        h1 {
-            margin-top: 50px;
-            margin-bottom: 10px;
+        
+        .inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
         }
-        img {
-            width: 70px;
-            margin: 30px auto;
+        
+        .img {
+        width: 150px;
+            @import url('https://imgur.com/ciqZm0z');
         }
-        p {
-            width: 350px;
-            margin: 0 auto;
+        .item {
+        text-aling: center;
         }
-
-        button {
-            border: 0;
-            border-radius: 10px;
-            margin-top: 50px;
-            height: 60px
-            width: 200px;
-            font-size: 50px
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 500ms ease;
-            color: var(--tg-theme-button-color);
-            background: var(--tg-theme-button-text-color);
+        
+        .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        border: none;
+        background: rgb(248, 168, 24);
+        border-radius: 10px
+        color: #fff;
+        font-weight: 700;
+  
+        trasition: background .2s linear;
         }
-
-        button:hover {
-            background: var(--tg-theme-secondary-bg-color)
+        .btn:hover {
+        background: lightgreen;
+        }
+        .usercard {
+        text-align: centre;
         }
 
      </style>
