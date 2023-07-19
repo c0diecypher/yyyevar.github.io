@@ -1,12 +1,12 @@
 body {
-     background: #FFF;
+     background: #171717;
      color: #000;
      font-family: Arial, sans-serif;
      font-size: 14px;
 }
 
 #header {
-     background: #F5DEB3;
+     background: #F5DEB3; 
      width: 100%;
      height: 55px;
 }
@@ -15,8 +15,9 @@ body {
      background: #FFD700;
      margin: auto auto;
      text-align: center;
-     width: 80%;
-     height: 400px;
+     width: 451.496px;
+     height: 977.639px;
+     flex-shrink: 0;
 }
  
 #search {
@@ -25,11 +26,10 @@ body {
      height: 25px;
 }
  
-#sidebar {
+#bar {
      background: #40E0D0;
-     float: left;
-     width: 20%;
-     height: 280px;
+     width: 100%;
+     height: 25px;
 }
 
 #content {
