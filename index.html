@@ -6,74 +6,32 @@
           content="widht=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum_scale=1.0"
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MyCatalog</title>
-    <link rel="stylesheet" href="https://yyyevar.github.io/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://c0diecypher.github.io/yyyevar.github.io/style.css" type="text/css" /> <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-        @import url('https://imgur.com/ciqZm0z');
-
-        * {
-            margin: 0
-            padding: 0
-            box_sizing: border-box;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 200;
-            color: var(--th-theme-text-color);
-            background: var(--tg-theme-bg-color);
-        }
-        main {
-            width: 100%;
-            padding: 20px;
-            text-align: centre;
-        }
-        h1 {
-            margin-top: 50px;
-            margin-bottom: 10px;
-        }
-        img {
-            width: 70px;
-            margin: 30px auto;
-        }
-        p {
-            width: 350px;
-            margin: 0 auto;
-        }
-
-        button {
-            border: 0;
-            border-radius: 10px;
-            margin-top: 50px;
-            height: 60px
-            width: 200px;
-            font-size: 50px
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 500ms ease;
-            color: var(--tg-theme-button-color);
-            background: var(--tg-theme-button-text-color);
-        }
-
-        button:hover {
-            background: var(--tg-theme-secondary-bg-color)
-        }
 
      </style>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-    <div class="main">
-        <img class="img" src="https://imgur.com/ciqZm0z"/>
-        <p class="p">Продавец говна</p>
-        <button class="buy">Купить</button>
-        <form class="form">
-            <input type="text" placeholder="Имя" id="user_name">
-            <input type="text" placeholder="Email" id="user_email">
-            <input type="text" placeholder="Телефон" id="user_phone">
-            <button id="order">Оформить</button>
-        </form>
+    <div id="container">
+        <div id="header">
+            <h2>header (тг аккаунт, бонусы, тг канал)</h2>
+	    </div>
+        <div id="search">
+        <h2>тут должен быть поиск товаров</h2>
+	    </div>
+        <div id="sidebar">
+        <h2>скругленные кнопки</h2>
+	    </div>
+        <div id="buttons">
+        <h2>обычные кнопки</h2>
+	    </div>
+        <div id="Content">
+        <h2>товары</h2>
+	    </div>
+	    
+        
     </div>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let tg = window.Telegram.WebApp;
         let buy = document.gelEle
