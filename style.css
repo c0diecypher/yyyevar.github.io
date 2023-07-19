@@ -1,28 +1,22 @@
 body {
-     background: #171717;
+     background: #FFF;
      color: #000;
      font-family: Arial, sans-serif;
      font-size: 14px;
-     width: 390px;
-     height: 977.639px;
-     flex-shrink: 0;
-     
 }
 
 #header {
-     background: #F5DEB3; 
+     background: #F5DEB3;
      width: 100%;
      height: 55px;
-     border-radius: 18px;
-     background: rgba(62, 62, 62, 0.70);
-     width: 170px;
-     height: 42px;
-     flex-shrink: 0;
+}
  
 #container {
-     background: #171717;
+     background: #FFD700;
      margin: auto auto;
      text-align: center;
+     width: 390px;
+     height: 977.639px;
 }
  
 #search {
@@ -33,8 +27,9 @@ body {
  
 #bar {
      background: #40E0D0;
-     width: 100%;
-     height: 25px;
+     float: left;
+     width: 20%;
+     height: 280px;
 }
 
 #content {
@@ -43,4 +38,3 @@ body {
      width: 80%;
      height: 280px;
 }
-
