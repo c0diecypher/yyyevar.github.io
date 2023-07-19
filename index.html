@@ -19,6 +19,14 @@
 	background: rgba(62, 62, 62, 0.70);
 	width: 170px;
 	height: 42px;
+	padding: 10px;
+	-webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+	.brd2:hover {
+	-webkit-transform: translate(10px);
+	transform: translate(10px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
 	}
 	.text {
 	width: 129px;
@@ -42,7 +50,7 @@
 			<a href="https://vk.com/id1">Продавец</a>
     		</div>
 		<div class="brd2">
-			<a class="text" href="https://vk.com/id2">Жопа</a>
+			<a class="text" onclick="location.href='http://vk.com/id2';">Жопа</a>
     		</div>
 	    </div>
         <div id="search">
