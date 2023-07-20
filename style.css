@@ -6,39 +6,177 @@ body {
      margin: 0;
      padding: 0;
 }
-
-#header {
-     background: #F5DEB3;
-     width: 100%;
-     height: 55px;
-     display: flex;
-}
- 
-#container {
+.container {
      background: #FFD700;
      margin: auto auto;
      text-align: center;
      width: 390px;
      height: 977.639px;
      margin: 0;
-     padding: 0;
-}
- 
-#search {
-     background: #FE9798;
-     width: 371px;
-     height: 42px;
-}
- 
-#bar {
-     background: #40E0D0;
-     width: 390px;
-     height: 25px;
 }
 
-#content {
-     background: #DCDCDC;
-     float: right;
-     width: 80%;
-     height: 280px;
+.header {
+     background: #171717;
+     width: 100%;
+     height: 96px;
+     display: flex;
+}
+.usercard {
+  background: #D9D9D9;
+  text-align: center;
+  width: 62px;
+  height: 62px;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  margin-left: 10px;
+  margin-right: 4px;
+  border-radius: 35px;
+}
+.bonus{
+  width: 121px;
+  height: 21px;
+  margin-top: 48px;
+  margin-bottom: 27px;
+  margin-left: 4px;
+  margin-right: 14px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #D9D9D9;
+}
+.tgchannel{
+  margin-top: 27px;
+  margin-tbottom: 27px;
+  border-radius: 18px;
+	background: rgba(62, 62, 62, 0.70);
+	width: 170px;
+	height: 42px;
+}
+.tgchanneltext{
+  margin-top: 150px;
+  width: 123px;
+  height: 17px;
+  color: #FFF;
+  font-family: OpenSans;
+  font-size: 16.856px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  display: down;
+  vertical-align: 80%;
+}
+.tglogo{
+  background: url(https://seeklogo.com/images/T/telegram-logo-57C0252D71-seeklogo.com.png)lightgrey 50%, cover no-repeat;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 1px;
+  margin-right: 1px;
+  display: inline;
+  width: 34px;
+  height: 34px;
+}
+
+.search {
+     background: #171717;
+     width: 390px;
+     height: 68px;
+}
+.srch{
+  width: 371px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  opacity: 0.5;
+  background: #3E3E3E;
+  margin-left: 10px;
+  margin-right: 9px;
+}
+
+.contentbar {
+     background: #171717;
+     width: 390px;
+     height: 122px;
+     display: flex;
+     flex-direction: row;
+}
+.contentbar1{
+  width: 113px;
+  height: 106px;
+  border-radius: 25px;
+  background: rgba(62, 62, 62, 0.70);
+  margin-left: 10px;
+}
+.contentbar2{
+   width: 113px;
+  height: 106px;
+  border-radius: 25px;
+  background: rgba(62, 62, 62, 0.70);
+  margin-left: 16px;
+}
+.contentbar3{
+   width: 113px;
+  height: 106px;
+  border-radius: 25px;
+  background: rgba(62, 62, 62, 0.70);
+  margin-left: 16px;
+}
+
+.buttons{
+     background: #171717;
+     width: 390px;
+     height: 116px;
+     display: flex;
+     flex-direction: row;
+}
+.buttonleft{
+  width: 180px;
+  height: 97px;
+  border-radius: 25px;
+  background: #3E3E3E;
+  margin-left: 10px;
+}
+.buttonright{
+  width: 180px;
+  height: 97px;
+  border-radius: 25px;
+  background: #00B3FF;
+  margin-left: 12px;
+}
+.cyrcleleft{
+  width: 47px;
+  height: 46px;
+  border-radius: 46px;
+  background: #FFF;
+  margin-left: 123px;
+  margin-top: 11px;
+}
+.cyrcleright{
+  width: 47px;
+  height: 46px;
+  border-radius: 46px;
+  background: #FFF;
+  margin-left: 123px;
+  margin-top: 11px;
+}
+.arrow{
+  width: 15px;
+  height: 0px;
+  stroke-width: 2px;
+  stroke: #FFF;
+}
+.arrow1{
+  
+}
+
+.catalogsearch {
+     background: #171717;
+     width: 100%;
+     height: 49px;
+     display: flex;
+}
+.content {
+     background: #171717;
+     width: 100%;
+     height: 500px;
+     display: flex;
 }
