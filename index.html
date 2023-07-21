@@ -104,7 +104,7 @@
   let profileName = document.createElement('p'); //При помощи document.createElement делаем абзац – <p> </p>
    profileName.innerText = `${telegramAppChatLabs.initDataUnsafe.user.first_name}
    ${telegramAppChatLabs.initDataUnsafe.user.last_name}
-   ${telegramAppChatLabs.initDataUnsafe.user.username} ${telegramAppChatLabs.initDataUnsafe.photo_url}
+   ${telegramAppChatLabs.initDataUnsafe.user.username} 
    (${telegramAppChatLabs.initDataUnsafe.user.language_code})`;
    //В созданном параграфе будет Имя пользователя, его Фамилия, username, а также код языка
    usercard.appendChild(profileName); //Используем appendChild, чтобы добавить узел в конец списка дочерних элементов
@@ -112,5 +112,8 @@
     // Используем document.createElement для создания еще одного абзаца
    userid.innerText = `${telegramAppChatLabs.initDataUnsafe.user.id}`; 
    usercard.appendChild(userid); // Добавляем id пользователя в конец списка дочерних элементов при помощи appendChild
+ let pic = document.createElement('img');
+      pic.src = tg.initDataUnsafe.user.photo_url; //задаём src
+      usercard.appendChild(pic); //добавляем элемент в карточку 
 </script>
 </html>
