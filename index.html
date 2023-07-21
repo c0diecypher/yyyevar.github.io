@@ -6,7 +6,7 @@
           content="widht=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum_scale=1.0"
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MyCatalog</title>
- <script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
   body{
          display: flex;
@@ -62,9 +62,9 @@
          text-align: center;
       }
       #img{
-        width: 62px;
-        height: 62px;
-	text-align: center;
+          width: 62px;
+           height: 62px;
+          text-align: center;
       }
    </style>
 </head>
@@ -129,6 +129,6 @@
    usercard.appendChild(userid); // Добавляем id пользователя в конец списка дочерних элементов при помощи appendChild
  let userimg = document.createElement('img');
    img.src = `${telegramApp.initDataUnsafe.user.id.photo_url}`; //устанавливаем путь к картинке юзера
-   usercard.appendChild(img);
+   img.getElementById('img').appendChild(img);
 </script>
 </html>
