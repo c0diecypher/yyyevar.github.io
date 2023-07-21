@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MyCatalog</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
   body{
          display: flex;
@@ -55,7 +54,7 @@
       #usercard{
          text-align: center;
       }
-      #usercardphoto{
+      #image-container{
           width: 62px;
            height: 62px;
       }
@@ -63,10 +62,8 @@
 </head>
 <body>
    <div id="usercard"> 
-     <img width="64" height="64" src="img.png"><!--Карточка профиля пользователя, который обращается к веб-приложению-->
    </div>
-  <div id="usercardphoto"> <!--картинка профиля-->
-    <img src="">
+  <div id="image-container"> <!--картинка профиля-->
    </div>
    <p>MyCatalog</p> <!--Используем для проверки-->
    <a class="link" href="https://t.me/juniorrel/" class="tgtext">@tgchannel</a> <!--Используем для проверки, что вебприложение Телеграмма работает-->
@@ -124,6 +121,6 @@
    usercard.appendChild(userid); // Добавляем id пользователя в конец списка дочерних элементов при помощи appendChild
  let img = document.createElement('img');
    img.src = `${telegramAppChatLabs.initDataUnsafe.user.photo_url}`; //устанавливаем путь к картинке юзера
-   usercard.appendChild(img); //добавляем элемент в карточку 
+   document.getElementById('image-container').append(img);
 </script>
 </html>
