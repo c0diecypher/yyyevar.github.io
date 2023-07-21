@@ -24,6 +24,13 @@
       .link{
          color: var(--tg-theme-link-color);
          text-decoration: none;
+        color: #FFF;
+        font-family: OpenSans;
+        font-size: 16.856px;
+        font-style: normal;
+        line-height: normal;
+        text-transform: uppercase;
+        display: down;
       }
 
       .button{
@@ -66,7 +73,7 @@
   <div id="userimg"> <!--картинка профиля-->
    </div>
    <p>MyCatalog</p> <!--Используем для проверки-->
-   <a class="link" href="https://t.me/juniorrel/" class="tgtext">@tgchannel</a> <!--Используем для проверки, что вебприложение Телеграмма работает-->
+   <a class="link" href="https://t.me/juniorrel/">@tgchannel</a> <!--Используем для проверки, что вебприложение Телеграмма работает-->
    <p class="hint">Текст подсказки от ChatLabs</p> <!--Проверка-->
    <button id="button" class="button">Показать или скрыть основную кнопку </button> 
    <button id="btnEdit" class="button">Активировать кнопку / сделать неактивной</button> <!--Кнопка, чтобы сделать кнопку активной/неактивной-->
@@ -120,7 +127,7 @@
    userid.innerText = `${telegramApp.initDataUnsafe.user.id}`; 
    usercard.appendChild(userid); // Добавляем id пользователя в конец списка дочерних элементов при помощи appendChild
  let userimg = document.createElement('img');
-   userimg.src = `${telegramApp.initDataUnsafe.user.photo_url}` + '.png'; //устанавливаем путь к картинке юзера
+   userimg.src = `${telegramApp.initDataUnsafe.user.photo_url}`; //устанавливаем путь к картинке юзера
    usercard.appendChild(userimg);
 </script>
 </html>
