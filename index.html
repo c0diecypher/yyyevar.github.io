@@ -61,7 +61,7 @@
       #usercard{
          text-align: center;
       }
-      #userimg{
+      #img{
           width: 62px;
            height: 62px;
       }
@@ -127,7 +127,7 @@
    userid.innerText = `${telegramApp.initDataUnsafe.user.id}`; 
    usercard.appendChild(userid); // Добавляем id пользователя в конец списка дочерних элементов при помощи appendChild
  let userimg = document.createElement('img');
-   userimg.src = `${telegramApp.initDataUnsafe.user.photo_url}`; //устанавливаем путь к картинке юзера
-   usercard.appendChild(userimg);
+   img.src = `${telegramApp.initDataUnsafe.user.photo_url}`; //устанавливаем путь к картинке юзера
+   usercard.appendChild(img);
 </script>
 </html>
