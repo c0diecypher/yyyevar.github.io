@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MyCatalog</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
   body{
          display: flex;
@@ -61,10 +62,11 @@
    </style>
 </head>
 <body>
-   <div id="usercard"> <!--Карточка профиля пользователя, который обращается к веб-приложению-->
+   <div id="usercard"> 
+     <img width="64" height="64" src="img.png"><!--Карточка профиля пользователя, который обращается к веб-приложению-->
    </div>
   <div id="usercardphoto"> <!--картинка профиля-->
-    <img src=img: id="usercardphoto">
+    <img src="">
    </div>
    <p>MyCatalog</p> <!--Используем для проверки-->
    <a class="link" href="https://t.me/juniorrel/" class="tgtext">@tgchannel</a> <!--Используем для проверки, что вебприложение Телеграмма работает-->
@@ -120,9 +122,8 @@
     // Используем document.createElement для создания еще одного абзаца
    userid.innerText = `${telegramAppChatLabs.initDataUnsafe.user.id}`; 
    usercard.appendChild(userid); // Добавляем id пользователя в конец списка дочерних элементов при помощи appendChild
- let usercardphoto = document.getElementById("usercardphoto");
- let pic = document.createElement('img');
-   pic.src = `${telegramAppChatLabs.initDataUnsafe.user.photo_url}`; //устанавливаем путь к картинке юзера
-   usercardphoto.appendChild(pic); //добавляем элемент в карточку 
+ let img = document.createElement('img');
+   img.src = `${telegramAppChatLabs.initDataUnsafe.user.photo_url}`; //устанавливаем путь к картинке юзера
+   usercard.appendChild(img); //добавляем элемент в карточку 
 </script>
 </html>
