@@ -7,26 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MyCatalog</title>
     <link rel="stylesheet" href="https://c0diecypher.github.io/yyyevar.github.io/style.css" type="text/css" /> <link rel="stylesheet" type="text/css" href="style.css"
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
     <div class="container">
-      <script>
-   let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
- 
-   let usercard = document.getElementById("usercard");
-
-   let profName = document.createElement('p');
-   profName.innerText = `${tg.initDataUnsafe.user.first_name}
-   ${tg.initDataUnsafe.user.last_name}
-   ${tg.initDataUnsafe.user.username}`;
-   usercard.appendChild(profName);
-
-   let userid = document.createElement('p');
-   userid.innerText = `${tg.initDataUnsafe.user.id}`;
-   usercard.appendChild(userid); 
-</script>
         <div class="header">
+		 <script>
+   			let tg = window.Telegram.WebApp; 
+ 
+   			let usercard = document.getElementById("usercard");
+
+   			let profName = document.createElement('p');
+   			profName.innerText = `${tg.initDataUnsafe.user.first_name}`;
+   			${tg.initDataUnsafe.user.last_name};
+   			${tg.initDataUnsafe.user.username};
+   			usercard.appendChild(profName);
+
+   			let userid = document.createElement('p');
+   			userid.innerText = `${tg.initDataUnsafe.user.id}`;
+   			usercard.appendChild(userid); 
+		</script>
           <div id="usercard" class="text"> <!--Карта профиля, человека, который к нам обратился-->
           </div>
           <p>XXX</p>
