@@ -6,14 +6,7 @@
           content="widht=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum_scale=1.0"
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MyCatalog</title>
-<script src="text/javascript">
-    function insert(){
-   let src document.getElementById("userphoto");
-   let img = document.createElement('img'); //создаем img
-   img.src = telegramApp.initDataUnsafe.user.photo_url; //задаём src 
-   src.appendChild(img);
-      }
-</script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
   body{
          display: flex;
@@ -71,11 +64,13 @@
    <div id="usercard">
    </div>
     <div id="userphoto">
-         <script type="text/javascript">
+         <script type="https://telegram.org/js/telegram-web-app.js">
              insert();
          </script>
     </div>
-   <p>MyCatalog</p> <!--Используем для проверки-->
+   <p>MyCatalog<img src="pic" 
+  width="64" height="74"></p> <!--Используем для проверки-->
+ 64
    <a class="link" href="https://t.me/juniorrel/" class="tgtext">@tgchannel</a> <!--Используем для проверки, что вебприложение Телеграмма работает-->
    <p class="hint">Текст подсказки от ChatLabs</p> <!--Проверка-->
    <button id="button" class="button">Показать или скрыть основную кнопку </button> 
@@ -125,10 +120,8 @@
    (${telegramApp.initDataUnsafe.user.language_code})`;
    //В созданном параграфе будет Имя пользователя, его Фамилия, username, а также код языка
    usercard.appendChild(profileName); //Используем appendChild, чтобы добавить узел в конец списка дочерних элементов
- let userid = document.createElement('p');
-    // Используем document.createElement для создания еще одного абзаца
-   userid.innerText = `${telegramApp.initDataUnsafe.user.id}`; 
-   usercard.appendChild(userid); // Добавляем id пользователя в конец списка дочерних элементов при помощи appendChild
-      //работает только в attachment menu
+    let pic = document.createElement('img'); //создаем img
+   pic.src = tg.initDataUnsafe.user.photo_url; //задаём src 
+   usercard.appendChild(pic); //добавляем элемент в карточку 
 </script>
 </html>
