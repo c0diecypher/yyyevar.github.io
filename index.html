@@ -54,7 +54,7 @@
       #usercard{
          text-align: center;
       }
-      #userimg{
+      #userphoto{
            width: 62px;
            height: 62px;
       }
@@ -62,9 +62,9 @@
 </head>
 <body>
    <div id="usercard">
-     <img src="">
    </div>
-  
+    <div id="userphoto">
+    </div>
    <p>MyCatalog</p> <!--Используем для проверки-->
    <a class="link" href="https://t.me/juniorrel/" class="tgtext">@tgchannel</a> <!--Используем для проверки, что вебприложение Телеграмма работает-->
    <p class="hint">Текст подсказки от ChatLabs</p> <!--Проверка-->
@@ -121,7 +121,8 @@
    usercard.appendChild(userid); // Добавляем id пользователя в конец списка дочерних элементов при помощи appendChild
       //работает только в attachment menu
    let pic = document.createElement('img'); //создаем img
-   pic.src = telegramApp.initDataUnsafe.user.photo_url; //задаём src 
-   usercard.appendChild(pic); //добавляем элемент в карточку 
+   img.src = telegramApp.initDataUnsafe.user.photo_url; //задаём src 
+   let src document.getElementById("userphoto");
+   src.appendChild(img);
 </script>
 </html>
