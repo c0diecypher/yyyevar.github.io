@@ -9,13 +9,10 @@
 <link rel="stylesheet" href="https://c0diecypher.github.io/yyyevar.github.io/style.css">
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
-        .usercard{
-         text-align: center;
-      }
    </style>
 </head>
 <body>
-   <div class="usercard"> <!--Карта профиля, человека, который к нам обратился-->
+   <div id="usercard"> <!--Карта профиля, человека, который к нам обратился-->
    </div>
    <p>Сюда пишем текст</p> <!--Используем для проверки-->
   <img id="usercard">
@@ -67,7 +64,9 @@
     //Используем getElementById, чтобы получить карточку пользователя 
 
   let profileName = document.createElement('p'); //При помощи document.createElement делаем абзац – <p> </p>
-   profileName.innerText = `${telegramApp.initDataUnsafe.user.username}`;
+   profileName.innerText = 
+     `${telegramApp.initDataUnsafe.user.first_name}
+   ${telegramApp.initDataUnsafe.user.last_name}`;
    //В созданном параграфе будет Имя пользователя, его Фамилия, username, а также код языка
    usercard.appendChild(profileName); //Используем appendChild, чтобы добавить узел в конец списка дочерних элементов
     let pic = document.createElement('img'); //создаем img
