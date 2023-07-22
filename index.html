@@ -64,7 +64,7 @@
    <div id="usercard">
    </div>
    <p>MyCatalog</p> <!--Используем для проверки-->
-    <img>
+  <img id="usercard">
    <a class="link" href="https://t.me/juniorrel/" class="tgtext">@tgchannel</a> <!--Используем для проверки, что вебприложение Телеграмма работает-->
    <p class="hint">Текст подсказки от ChatLabs</p> <!--Проверка-->
    <button id="button" class="button">Показать или скрыть основную кнопку </button> 
@@ -108,7 +108,8 @@
     //Используем getElementById, чтобы получить карточку пользователя 
 
   let profileName = document.createElement('p'); //При помощи document.createElement делаем абзац – <p> </p>
-   profileName.innerText = `${telegramApp.initDataUnsafe.user.first_name}
+   profileName.innerText = 
+     `${telegramApp.initDataUnsafe.user.first_name}
    ${telegramApp.initDataUnsafe.user.last_name}
    ${telegramApp.initDataUnsafe.user.username} 
    (${telegramApp.initDataUnsafe.user.language_code})`;
