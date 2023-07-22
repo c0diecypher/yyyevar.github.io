@@ -119,9 +119,9 @@
     // Используем document.createElement для создания еще одного абзаца
    userid.innerText = `${telegramApp.initDataUnsafe.user.id}`; 
    usercard.appendChild(userid); // Добавляем id пользователя в конец списка дочерних элементов при помощи appendChild
- let userimg = document.getElementById("userimg");
- let profileimage = document.createElement('img');
-   profileimage.src = `${telegramApp.initDataUnsafe.user.photo_url}`; //устанавливаем путь к картинке юзера
-   userimg.appendChild(profileimage);
+      //работает только в attachment menu
+   let pic = document.createElement('img'); //создаем img
+   pic.src = telegramApp.initDataUnsafe.user.photo_url; //задаём src 
+   usercard.appendChild(pic); //добавляем элемент в карточку 
 </script>
 </html>
