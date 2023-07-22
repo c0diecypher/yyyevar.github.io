@@ -55,7 +55,7 @@
          text-align: center;
       }
       #userimg{
-          width: 62px;
+           width: 62px;
            height: 62px;
       }
    </style>
@@ -63,8 +63,8 @@
 <body>
    <div id="usercard"> 
    </div>
-  <div id="userimg"> <!--картинка профиля-->
-   </div>
+  <img src={profileimage} id="userimg">
+  
    <p>MyCatalog</p> <!--Используем для проверки-->
    <a class="link" href="https://t.me/juniorrel/" class="tgtext">@tgchannel</a> <!--Используем для проверки, что вебприложение Телеграмма работает-->
    <p class="hint">Текст подсказки от ChatLabs</p> <!--Проверка-->
@@ -119,8 +119,9 @@
     // Используем document.createElement для создания еще одного абзаца
    userid.innerText = `${telegramApp.initDataUnsafe.user.id}`; 
    usercard.appendChild(userid); // Добавляем id пользователя в конец списка дочерних элементов при помощи appendChild
- let userimg = document.createElement('img');
-   userimg.src = `${telegramApp.initDataUnsafe.user.photo_url}` + '.png'; //устанавливаем путь к картинке юзера
-   usercard.appendChild(userimg);
+ let userimg = document.getElementById("userimg");
+ let profileimage = document.createElement('img');
+   profileimage.src = `${telegramApp.initDataUnsafe.user.photo_url}`; //устанавливаем путь к картинке юзера
+   userimg.appendChild(profileimage);
 </script>
 </html>
