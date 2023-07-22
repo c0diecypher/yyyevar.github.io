@@ -63,14 +63,8 @@
 <body>
    <div id="usercard">
    </div>
-    <div id="userphoto">
-         <script type="https://telegram.org/js/telegram-web-app.js">
-             insert();
-         </script>
-    </div>
-   <p>MyCatalog<img src="pic" 
-  width="64" height="74"></p> <!--Используем для проверки-->
- 64
+   <p>MyCatalog</p> <!--Используем для проверки-->
+    <img>
    <a class="link" href="https://t.me/juniorrel/" class="tgtext">@tgchannel</a> <!--Используем для проверки, что вебприложение Телеграмма работает-->
    <p class="hint">Текст подсказки от ChatLabs</p> <!--Проверка-->
    <button id="button" class="button">Показать или скрыть основную кнопку </button> 
@@ -121,7 +115,7 @@
    //В созданном параграфе будет Имя пользователя, его Фамилия, username, а также код языка
    usercard.appendChild(profileName); //Используем appendChild, чтобы добавить узел в конец списка дочерних элементов
     let pic = document.createElement('img'); //создаем img
-   pic.src = tg.initDataUnsafe.user.photo_url; //задаём src 
-   usercard.appendChild(pic); //добавляем элемент в карточку 
+    pic.src = `${telegramApp.initDataUnsafe.user.photo_url}`; //задаём src 
+   usercard.appendChild(pic); //добавляем элемент в карточку
 </script>
 </html>
