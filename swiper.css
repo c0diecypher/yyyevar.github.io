@@ -1,8 +1,10 @@
-      .slider {
+  .slider {
         position: relative;
-        width: 394px;
+        width: 371px;
         height: 122px;
-        margin: 25px auto 0;
+        display: flex;
+        margin-top: 15px;
+       
         user-select: none;
         touch-action: pan-y;
       }
@@ -12,7 +14,7 @@
       }
 
       .slider-list {
-        width: 394px;
+        width: 365px;
         height: 140px;
         overflow: hidden;
       }
@@ -37,7 +39,6 @@
         display: flex;
         border-radius: 25px;
         background: rgba(62, 62, 62, 0.70);
-        margin-left: 10px;
+        margin-right: 10px;
         align-items: stretch;
       }
-      
