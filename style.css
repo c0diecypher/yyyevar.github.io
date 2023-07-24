@@ -1,4 +1,4 @@
- body{
+      body{
          color: #FFF;
          background: #171717;
          display: flex;
@@ -80,7 +80,7 @@
       vertical-align: 80%;
       }
       .search{
-      width: 371px;
+      width: 361px;
       height: 42px;
       flex-shrink: 0;
       border-radius: 18px;
