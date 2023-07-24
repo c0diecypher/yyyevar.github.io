@@ -1,1 +1,42 @@
+    .slider {
+        position: relative;
+        width: 394px;
+        height: 122px;
+        margin: 50px auto 0;
+        user-select: none;
+        touch-action: pan-y;
+      }
+
+      .slider img {
+        poiner-events: none;
+      }
+
+      .slider-list {
+        width: 394px;
+        height: 122px;
+        overflow: hidden;
+      }
+
+      .slider-list.grab {
+        cursor: grab;
+      }
+
+      .slider-list.grabbing{
+        cursor: grabbing;
+      }
+
+      .slider-track {
+        display: flex;
+      }
+
+      .slide {
+        width: 106px;
+        height: 106px;
+        flex-shrink: 0;
+        font-size: 20px;
+        display: flex;
+        border-radius: 25px;
+        background: rgba(62, 62, 62, 0.70);
+        margin-left: 10px;
+      }
 
