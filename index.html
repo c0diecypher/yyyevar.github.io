@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="https://c0diecypher.github.io/yyyevar.github.io/style.css">
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
+      #usercard{
+      text-align: center;
+      }
    </style>
 </head>
 <body>
@@ -26,49 +29,62 @@
    <button id="btnEdit" class="button">Активировать кнопку / сделать неактивной</button> <!--Кнопка, чтобы сделать кнопку активной/неактивной-->
 </body>
 	<script>
-   
-   let telegramApp = window.Telegram.WebApp; //нужно получить объект window.Telegram.WebApp Телеграмма
-   telegramApp.expand(); //разворачиваем на все окно
-   telegramApp.MainButton.text = "Кнопка1"; //Задаем текст кнопки 
-   telegramApp.MainButton.setText("ChatLabs на кнопке"); //Меняем текст на кнопке веббота в Телеграмме
-   telegramApp.MainButton.textColor = "#ff0000"; //Указываем цвет текста, а в данном случае выбран 100% красный
-   telegramApp.MainButton.color = "#ffffff"; //Делаем бэкграунд кнопки 100% белым
-   telegramApp.MainButton.setParams({"color": "#000000"}); // Изменяем все параметры
-   let button = document.getElementById("button"); //Используем getElementById, чтобы получить кнопку, которую сделали выше и которой присвоили id и class
-   button.addEventListener('click', function(){ //Используем addEventListener, чтобы слушать клик по кнопке 
-      if (telegramApp.MainButton.isVisible){ //проверяем, видима ли кнопка, при помощи isVisible, который предоставляет нам API TG
-         telegramApp.MainButton.hide() //прячем кнопку
+  let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
+
+   tg.expand(); //расширяем на все окно  
+
+   tg.MainButton.text = "Changed Text"; //изменяем текст кнопки 
+   tg.MainButton.setText("Changed Text1"); //изменяем текст кнопки иначе
+   tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
+   tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
+   tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
+
+   let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать 
+
+   btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+      if (tg.MainButton.isVisible){ //если кнопка показана 
+         tg.MainButton.hide() //скрываем кнопку 
       }
-      else{ 
-         telegramApp.MainButton.show() //если булевое значение isVisible === false, то показываем кнопку, используя show() 
+      else{ //иначе
+         tg.MainButton.show() //показываем 
       }
    });
 
-   let btnEdit = document.getElementById("btnEdit"); //Используем getElementById, чтобы получить кнопку и активировать/деактивировать
-   btnEdit.addEventListener('click', function(){ //Слушаем при помощи addEventListener клик на кнопку
-      if (telegramApp.MainButton.isActive){ //Если наша кнопка активна 
-         telegramApp.MainButton.setParams({"color": "#ffffff"}); //Заменяем цвет на белый
-         telegramApp.MainButton.disable() //Скрываем кнопку 
+   let btnED = document.getElementById("btnED"); //получаем кнопку активировать/деактивировать
+   btnED.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+      if (tg.MainButton.isActive){ //если кнопка показана 
+         tg.MainButton.setParams({"color": "#E0FFFF"}); //меняем цвет
+         tg.MainButton.disable() //скрываем кнопку 
       }
-      else{ //В противном случае
-         telegramApp.MainButton.setParams({"color": "#0000ff"}); //Заменяем цвет на синий
-         telegramApp.MainButton.enable() //Отображаем в веб-боте TelegramWebApp
+      else{ //иначе
+         tg.MainButton.setParams({"color": "#143F6B"}); //меняем цвет
+         tg.MainButton.enable() //показываем 
       }
    });
 
    Telegram.WebApp.onEvent('mainButtonClicked', function(){
-      telegramApp.sendData("Проверяем событие onEvent. Если был клик по кнопке, то отправляем данные при помощи sendData в виде данной строки"); 
-       });
-   let usercard = document.getElementById("usercard"); //Используем getElementById, чтобы получить карточку пользователя 
+      tg.sendData("some string that we need to send"); 
+      //при клике на основную кнопку отправляем данные в строковом виде
+   });
 
-  let profileName = document.createElement('p'); //При помощи document.createElement делаем абзац – <p> </p>
-   profileName.innerText = `${telegramAppChatLabs.initDataUnsafe.user.first_name}
-   ${telegramAppChatLabs.initDataUnsafe.user.last_name}
-   ${telegramAppChatLabs.initDataUnsafe.user.username} (${telegramAppChatLabs.initDataUnsafe.user.language_code})`;
-   //В созданном параграфе будет Имя пользователя, его Фамилия, username, а также код языка
-   usercard.appendChild(profileName); //Используем appendChild, чтобы добавить узел в конец списка дочерних элементов
- let userid = document.createElement('p'); // Используем document.createElement для создания еще одного абзаца
-   userid.innerText = `${telegramAppChatLabs.initDataUnsafe.user.id}`; // Отображаем id пользователя
-   usercard.appendChild(userid); // Добавляем id пользователя в конец списка дочерних элементов при помощи appendChild
+
+   let usercard = document.getElementById("usercard"); //получаем блок usercard 
+
+   let profName = document.createElement('p'); //создаем параграф
+   profName.innerText = `${tg.initDataUnsafe.user.first_name}
+   ${tg.initDataUnsafe.user.last_name}
+   ${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code})`;
+   //выдем имя, "фамилию", через тире username и код языка
+   usercard.appendChild(profName); //добавляем 
+
+   let userid = document.createElement('p'); //создаем еще параграф 
+   userid.innerText = `${tg.initDataUnsafe.user.id}`; //показываем user_id
+   usercard.appendChild(userid); //добавляем
+
+
+   //работает только в attachment menu
+   // let pic = document.createElement('img'); //создаем img
+   // pic.src = tg.initDataUnsafe.user.photo_url; //задаём src 
+   // usercard.appendChild(pic); //добавляем элемент в карточку 
 </script>
 </html>
