@@ -21,9 +21,13 @@
       .button:not(:last-child){
          margin-bottom: 20px
       }
+      .container{
+      display: flex;
+      border: 1px solid;
+      }
       .usercard{
          display: flex;
-          width: 50px;
+          width: 100px;
           height: 50px;
          margin-left: 6px;
          margin-top: 14px;
@@ -33,7 +37,7 @@
       }
       .userphoto{
          background: #D9D9D9;
-         border-radius: 20px;
+         display: flex;
          width: 62px;
          height: 62px;
          margin-top: 4px;
@@ -43,7 +47,33 @@
          border-radius: 35px;
          
       }
-      .container{
-      display: flex;
-      border: 1px solid;
+      .widget{
+      padding: 0px;
+      margin-top: 14px;
+      margin-left: 30px;
+      border-radius: 35px;
+      background: rgba(62, 62, 62, 0.70);
+      width: 180px;
+      height: 42px;
+      }
+      .widget-logo{
+      margin-top: 4px;
+      margin-bottom: 4px;
+      margin-left: 4px;
+      margin-right: 1px;
+      display: inline;
+      width: 34px;
+      height: 34px;
+      }
+      .widget-text{
+      text-decoration: none;
+      width: 123px;
+      height: 17px;
+      color: #FFF;
+      font-family: OpenSans;
+      font-size: 16.856px;
+      font-style: normal;
+      line-height: normal;
+      text-transform: uppercase;
+      vertical-align: 80%;
       }
