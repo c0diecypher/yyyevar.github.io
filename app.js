@@ -1,93 +1,57 @@
-let tg = window.Telegram.WebApp;
+let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
 
-tg.expand()
-tg.MainButton.textColor = "#FFFFFF";
-tg.MainButton.color = "2cab37";
+   tg.expand(); //расширяем на все окно  
 
-let item = "";
+   tg.MainButton.text = "Changed Text"; //изменяем текст кнопки 
+   tg.MainButton.setText("Changed Text1"); //изменяем текст кнопки иначе
+   tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
+   tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
+   tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
 
-let bt1 = document.getElementById("btn1")
-let bt1 = document.getElementById("btn2")
-let bt1 = document.getElementById("btn3")
-let bt1 = document.getElementById("btn4")
-let bt1 = document.getElementById("btn5")
-let bt1 = document.getElementById("btn6")
+   let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать 
 
-btn1.addEventListener("click", function(){
-  if (tg.MainButton.isVisible) {
-      tg.MainButton.hide();
-  }
-  else {
-    tg.MainButton.setText("Выбрано")
-    item = "1";
-    tg.MainButton.show();
-  }
-});
+   btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+      if (tg.MainButton.isVisible){ //если кнопка показана 
+         tg.MainButton.hide() //скрываем кнопку 
+      }
+      else{ //иначе
+         tg.MainButton.show() //показываем 
+      }
+   });
 
-btn2.addEventListener("click", function(){
-  if (tg.MainButton.isVisible) {
-      tg.MainButton.hide();
-  }
-  else {
-    tg.MainButton.setText("Выбрано")
-    item = "2";
-    tg.MainButton.show();
-  }
-});
+   let btnED = document.getElementById("btnED"); //получаем кнопку активировать/деактивировать
+   btnED.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+      if (tg.MainButton.isActive){ //если кнопка показана 
+         tg.MainButton.setParams({"color": "#E0FFFF"}); //меняем цвет
+         tg.MainButton.disable() //скрываем кнопку 
+      }
+      else{ //иначе
+         tg.MainButton.setParams({"color": "#143F6B"}); //меняем цвет
+         tg.MainButton.enable() //показываем 
+      }
+   });
 
-btn3.addEventListener("click", function(){
-  if (tg.MainButton.isVisible) {
-      tg.MainButton.hide();
-  }
-  else {
-    tg.MainButton.setText("Выбрано")
-    item = "3";
-    tg.MainButton.show();
-  }
-});
+   Telegram.WebApp.onEvent('mainButtonClicked', function(){
+      tg.sendData("some string that we need to send"); 
+      //при клике на основную кнопку отправляем данные в строковом виде
+   });
 
-btn4.addEventListener("click", function(){
-  if (tg.MainButton.isVisible) {
-      tg.MainButton.hide();
-  }
-  else {
-    tg.MainButton.setText("Выбрано")
-    item = "4";
-    tg.MainButton.show();
-  }
-});
 
-btn5.addEventListener("click", function(){
-  if (tg.MainButton.isVisible) {
-      tg.MainButton.hide();
-  }
-  else {
-    tg.MainButton.setText("Выбрано")
-    item = "5";
-    tg.MainButton.show();
-  }
-});
+   let usercard = document.getElementById("usercard"); //получаем блок usercard 
 
-btn6.addEventListener("click", function(){
-  if (tg.MainButton.isVisible) {
-      tg.MainButton.hide();
-  }
-  else {
-    tg.MainButton.setText("Выбрано")
-    item = "6";
-    tg.MainButton.show();
-  }
-});
+   let profName = document.createElement('p'); //создаем параграф
+   profName.innerText = `${tg.initDataUnsafe.user.first_name}
+   ${tg.initDataUnsafe.user.last_name}
+   ${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code})`;
+   //выдем имя, "фамилию", через тире username и код языка
+   usercard.appendChild(profName); //добавляем 
 
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
-  tg.sendData(item);
-});
+   let userid = document.createElement('p'); //создаем еще параграф 
+   userid.innerText = `${tg.initDataUnsafe.user.id}`; //показываем user_id
+   usercard.appendChild(userid); //добавляем
 
-let usercard = document.getElementById("usercard");
 
-let p = document.createElement("p");
-
-p.innerText = '${tg.initDataUnsafe.first_name}'
-${tg.initDataUnsafe.user.id}
-
-usercard.appendChild(p);
+   //работает только в attachment menu
+   // let pic = document.createElement('img'); //создаем img
+   // pic.src = tg.initDataUnsafe.user.photo_url; //задаём src 
+   // usercard.appendChild(pic); //добавляем элемент в карточку 
