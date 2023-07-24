@@ -1,6 +1,6 @@
-  .slider {
+    .slider {
         position: relative;
-        width: 371px;
+        width: 380px;
         height: 122px;
         display: flex;
         margin-top: 15px;
@@ -14,7 +14,7 @@
       }
 
       .slider-list {
-        width: 365px;
+        width: 382px;
         height: 140px;
         overflow: hidden;
       }
@@ -43,3 +43,4 @@
         margin-left: 10px;
         align-items: stretch;
       }
+      
