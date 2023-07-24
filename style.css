@@ -1,4 +1,4 @@
-      body{
+ body{
          color: #FFF;
          background: #171717;
          display: flex;
@@ -17,13 +17,14 @@
          color: var(--tg-theme-button-text-color);
          border: none;
          font-size: 18px;
+         margin-top: 30px;
       }
       .button:not(:last-child){
          margin-bottom: 20px
       }
       .container{
       display: flex;
-      border: 1px solid;
+      
       }
       .usercard{
          display: flex;
@@ -37,10 +38,9 @@
       }
       .userphoto{
          background: #D9D9D9;
-         display: flex;
          width: 62px;
          height: 62px;
-         margin-top: 4px;
+         margin-top: 12px;
          margin-bottom: 17px;
          margin-left: 10px;
          margin-right: 4px;
@@ -48,9 +48,9 @@
          
       }
       .widget{
-      padding: 0px;
-      margin-top: 14px;
-      margin-left: 30px;
+      display: flex;
+      margin-top: 5%;
+      margin-left: 15px;
       border-radius: 35px;
       background: rgba(62, 62, 62, 0.70);
       width: 180px;
@@ -67,6 +67,8 @@
       }
       .widget-text{
       text-decoration: none;
+      margin-top: 10px;
+      margin-left: 4px;
       width: 123px;
       height: 17px;
       color: #FFF;
@@ -77,3 +79,42 @@
       text-transform: uppercase;
       vertical-align: 80%;
       }
+      .search{
+      width: 371px;
+      height: 42px;
+      flex-shrink: 0;
+      border-radius: 18px;
+      opacity: 0.5;
+      background: #3E3E3E;
+      margin-left: 10px;
+      margin-right: 9px;
+      }
+      .content{
+       background: #171717;
+       margin-top: 16px;
+       width: 390px;
+       height: 122px;
+       display: flex;
+       flex-direction: row;
+       }
+      .sale{
+  width: 113px;
+  height: 106px;
+  border-radius: 25px;
+  background: rgba(62, 62, 62, 0.70);
+  margin-left: 10px;
+}
+      .delivery{
+   width: 113px;
+  height: 106px;
+  border-radius: 25px;
+  background: rgba(62, 62, 62, 0.70);
+  margin-left: 16px;
+}
+      .where{
+   width: 113px;
+  height: 106px;
+  border-radius: 25px;
+  background: rgba(62, 62, 62, 0.70);
+  margin-left: 16px;
+}
