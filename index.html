@@ -60,18 +60,16 @@
    Telegram.WebApp.onEvent('mainButtonClicked', function(){
       telegramApp.sendData("Проверяем событие onEvent. Если был клик по кнопке, то отправляем данные при помощи sendData в виде данной строки"); 
        });
-   let usercard = document.getElementById("usercard");
-    //Используем getElementById, чтобы получить карточку пользователя 
+   let usercard = document.getElementById("usercard"); //Используем getElementById, чтобы получить карточку пользователя 
 
   let profileName = document.createElement('p'); //При помощи document.createElement делаем абзац – <p> </p>
-   profileName.innerText = `${telegramApp.initDataUnsafe.last_name}
-   ${telegramApp.initDataUnsafe.user.first_name}
-   ${telegramApp.initDataUnsafe.user.last_name}`;
+   profileName.innerText = `${telegramAppChatLabs.initDataUnsafe.user.first_name}
+   ${telegramAppChatLabs.initDataUnsafe.user.last_name}
+   ${telegramAppChatLabs.initDataUnsafe.user.username} (${telegramAppChatLabs.initDataUnsafe.user.language_code})`;
    //В созданном параграфе будет Имя пользователя, его Фамилия, username, а также код языка
    usercard.appendChild(profileName); //Используем appendChild, чтобы добавить узел в конец списка дочерних элементов
-    let usercard = document.getElementById("usercard");
-    let pic = document.createElement('img'); //создаем img
-    pic.src = `${telegramApp.initDataUnsafe.user.photo_url}`; //задаём src 
-   usercard.appendChild(pic); //добавляем элемент в карточку
+ let userid = document.createElement('p'); // Используем document.createElement для создания еще одного абзаца
+   userid.innerText = `${telegramAppChatLabs.initDataUnsafe.user.id}`; // Отображаем id пользователя
+   usercard.appendChild(userid); // Добавляем id пользователя в конец списка дочерних элементов при помощи appendChild
 </script>
 </html>
