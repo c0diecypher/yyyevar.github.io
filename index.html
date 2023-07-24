@@ -19,10 +19,10 @@
   <div class"container">
     		      <div class="tgchannel">
           <img src="https://seeklogo.com/images/T/telegram-logo-57C0252D71-seeklogo.com.png" class=tglogo>
-			    <a class="tgchanneltext" href="https://t.me/whokilledravey">@SHOESALE</a>
+			    <a class="tgchanneltext" href="https://t.me/zipperwear">@zipperwear</a>
     		  </div>
   </div>
-   <p class="hint">Текст подсказки от ChatLabs</p> <!--Проверка-->
+   <p class="hint">еще какой-то текст</p> <!--Проверка-->
    <button id="button" class="button">Показать или скрыть основную кнопку </button> 
    <button id="btnEdit" class="button">Активировать кнопку / сделать неактивной</button> <!--Кнопка, чтобы сделать кнопку активной/неактивной-->
 </body>
@@ -64,8 +64,8 @@
     //Используем getElementById, чтобы получить карточку пользователя 
 
   let profileName = document.createElement('p'); //При помощи document.createElement делаем абзац – <p> </p>
-   profileName.innerText = 
-   `${telegramApp.initDataUnsafe.user.first_name}
+   profileName.innerText = `${telegramApp.initDataUnsafe.last_name}
+   ${telegramApp.initDataUnsafe.user.first_name}
    ${telegramApp.initDataUnsafe.user.last_name}`;
    //В созданном параграфе будет Имя пользователя, его Фамилия, username, а также код языка
    usercard.appendChild(profileName); //Используем appendChild, чтобы добавить узел в конец списка дочерних элементов
