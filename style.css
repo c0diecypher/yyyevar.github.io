@@ -1,81 +1,26 @@
- body{
+      body{
+         color: var(--tg-theme-text-color);
+         background: var(--tg-theme-bg-color);
          display: flex;
-         color: #FFF;
-         background: #171717;
          flex-direction: column;
-         font-size: 20px;
-         margin: 0;
-         padding: 0;
+         align-items: center;
+         font-size: 18px;
       }
-      .container{
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      padding: 20px;
-      }
-      .tglogo{
-       margin-top: 4px;
-      margin-bottom: 4px;
-     margin-left: 4px;
-  margin-right: 1px;
-  display: inline;
-  width: 34px;
-  height: 34px;
-      }
- 
       .hint{
-         color: #FFF;
-         margin-left: 100px;
+         color: var(--tg-theme-hint-color);
       }
-
       .link{
-         margin-left: 50px;
-         text-decoration: none;
-         color: #FFF;
-         font-family: OpenSans;
-         margin-top: 0px;
+         color: var(--tg-theme-link-color);
       }
-
       .button{
          background: var(--tg-theme-button-color);
          color: var(--tg-theme-button-text-color);
          border: none;
-         font-size: 20px;
+         font-size: 18px;
       }
       .button:not(:last-child){
-         margin-bottom: 15px
+         margin-bottom: 20px
       }
-
-
-      .tgchannel{
-       margin-left: 125px;
-       margin-top: 27px;
-       margin-tbottom: 27px;
-       border-radius: 18px;
-	     background: rgba(62, 62, 62, 0.70);
-	     width: 170px;
-	     height: 42px;
-}
-.tgchanneltext{
-  margin-top: 150px;
-  width: 123px;
-  height: 17px;
-  color: #FFF;
-  font-family: OpenSans;
-  font-size: 16.856px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: uppercase;
-  display: down;
-  vertical-align: 80%;
-  text-decoration: none;
-}
-
       #usercard{
          text-align: center;
-      }
-      #userphoto{
-           width: 62px;
-           height: 62px;
       }
