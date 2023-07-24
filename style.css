@@ -21,6 +21,6 @@
       .button:not(:last-child){
          margin-bottom: 20px
       }
-      #usercard{
+      .usercard{
          text-align: center;
       }
