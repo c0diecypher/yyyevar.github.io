@@ -1,0 +1,50 @@
+ .content-wears{
+      display: flex;
+      position: relative;
+      margin-left: 4px;
+      }
+      .item{
+      position: absolute;
+      border-radius: 25px;
+      background: #FFF;
+      width: 170px;
+      height: 130px;
+      opacity: 0.5;
+      }
+      .one{
+      position: reletive;
+      margin-top: 90px;
+      border-radius: 15px;
+      background: #3E3E3E;;
+      width: 170px;
+      height: 148px;
+      }
+      .item-text{
+      padding: 0px;
+      margin: -14px;
+      width: 157px;
+      margin-left: 8px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 13px;
+      word-wrap: break-word;
+      }
+      .item-price{
+      margin-top: 44px;
+      padding-buttom: 0px;
+      margin-left: 8px;
+      margin-buttom: 0px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      }
+      .buy{
+         background: #D3D3D3;
+         border-radius: 15px;
+         width: 162px;
+         height: 32px;
+         color: #FFF;
+         border: none;
+         font-size: 14px;
+         margin-top: 22px;
+         margin-left: 4px;
+         font-family: 'Open Sans', sans-serif;
+      }
