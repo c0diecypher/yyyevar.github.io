@@ -1,6 +1,7 @@
-    .slider {
+
+      .slider {
         position: relative;
-        width: 380px;
+        width: 370px;
         height: 122px;
         display: flex;
         margin-top: 15px;
@@ -8,39 +9,32 @@
         user-select: none;
         touch-action: pan-y;
       }
-
       .slider img {
         poiner-events: none;
       }
-
       .slider-list {
-        width: 382px;
+        width: auto;
         height: 140px;
         overflow: hidden;
       }
-
       .slider-list.grab {
         cursor: grab;
       }
-
       .slider-list.grabbing{
         cursor: grabbing;
       }
-
       .slider-track {
         display: flex;
       }
-
       .slide {
         width: 113px;
         height: 106px;
         flex-shrink: 0;
         font-size: 20px;
-        display: flex;
+        max-width: 100%;
         border-radius: 25px;
         background: rgba(62, 62, 62, 0.70);
-        margin-right: 2px;
-        margin-left: 10px;
-        align-items: stretch;
+        margin-right: 10px;
+        
       }
       
