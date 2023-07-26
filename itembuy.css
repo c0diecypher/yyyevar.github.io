@@ -1,4 +1,9 @@
- .content-wears{
+.content-catalog{
+      @import url('https://fonts.googleapis.com/css2?   family=Open+Sans:wght@400;700;800&display=swap');
+      font-family: 'Open Sans', sans-serif;
+      margin-left: 4px;
+      }
+      .content-wears{
       display: flex;
       position: relative;
       margin-left: 4px;
@@ -36,7 +41,7 @@
       font-size: 16px;
       }
       .buy{
-         background: #171717;
+         background: #D3D3D3;
          border-radius: 15px;
          width: 162px;
          height: 32px;
