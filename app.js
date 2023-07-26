@@ -1,6 +1,6 @@
 let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
 
-let tg = window.Telegram.WebApp.expand() //расширяем на все окно  
+   tg.expand() //расширяем на все окно  
 
    tg.MainButton.text = "Changed Text"; //изменяем текст кнопки 
    tg.MainButton.setText("Changed Text1"); //изменяем текст кнопки иначе
