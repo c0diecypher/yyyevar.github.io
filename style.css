@@ -1,4 +1,5 @@
-    body{
+      body{
+         overflow: auto;
          color: #FFF;
          background: #171717;
          display: flex;
@@ -7,8 +8,10 @@
          margin: 0;
       }
 .header{
-  width: 50%;
-  margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 23.5em
+}
 }
       .hint{
          color: var(--tg-theme-hint-color);
@@ -21,10 +24,10 @@
          color: var(--tg-theme-button-text-color);
          border: none;
          font-size: 18px;
-         margin-top: 30px;
+         margin-top: 50px;
       }
       .button:not(:last-child){
-         margin-bottom: 20px
+         margin-bottom: 50px
       }
       .container{
       display: flex;
@@ -34,7 +37,7 @@
          display: flex;
           width: 100px;
           height: 50px;
-         margin-left: 6px;
+       
          margin-top: 14px;
          padding: 0px;
          border: 10px;
@@ -46,8 +49,8 @@
          height: 62px;
          margin-top: 12px;
          margin-bottom: 17px;
-         margin-left: 10px;
-         margin-right: 4px;
+   
+         margin-right: 0px;
          border-radius: 35px;
          
       }
@@ -100,24 +103,3 @@
        display: flex;
        flex-direction: row;
        }
-      .sale{
-  width: 113px;
-  height: 106px;
-  border-radius: 25px;
-  background: rgba(62, 62, 62, 0.70);
-  margin-left: 10px;
-}
-      .delivery{
-   width: 113px;
-  height: 106px;
-  border-radius: 25px;
-  background: rgba(62, 62, 62, 0.70);
-  margin-left: 16px;
-}
-      .where{
-   width: 113px;
-  height: 106px;
-  border-radius: 25px;
-  background: rgba(62, 62, 62, 0.70);
-  margin-left: 16px;
-}
