@@ -1,17 +1,16 @@
       body{
          overflow: auto;
          color: #FFF;
-         background: var(--tg-theme-bg-color);
+         background: #171717;
          display: flex;
          flex-direction: column;
          position: static;
          margin: 0;
       }
-.header{
+      .header{
     margin-left: auto;
     margin-right: auto;
     width: auto;
-}
 }
       .hint{
          color: var(--tg-theme-hint-color);
@@ -35,9 +34,9 @@
       }
       .usercard{
          display: flex;
-          width: 30px;
-          height: 50px;
-         
+         width: 30px;
+         height: 50px;
+         font-family: 'Open Sans', sans-serif;
          margin-top: 14px;
          margin-left: 10px;
          align-items: center;
@@ -81,7 +80,7 @@
       width: 123px;
       height: 17px;
       color: #FFF;
-      font-family: OpenSans;
+      font-family: 'Open Sans', sans-serif;
       font-size: 16.856px;
       font-style: normal;
       line-height: normal;
@@ -96,5 +95,10 @@
       border-radius: 18px;
       opacity: 0.5;
       background: #3E3E3E;
+      margin-left: 4px;
+      }
+      .content-catalog{
+      @import url('https://fonts.googleapis.com/css2?   family=Open+Sans:wght@400;700;800&display=swap');
+      font-family: 'Open Sans', sans-serif;
       margin-left: 4px;
       }
