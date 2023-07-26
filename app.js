@@ -8,7 +8,7 @@ let tg = window.Telegram.WebApp; //получаем объект webapp теле
    tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
    tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
 
-   let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать 
+   let btn = document.getElementById("item-buy"); //получаем кнопку скрыть/показать 
 
    btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
       if (tg.MainButton.isVisible){ //если кнопка показана 
