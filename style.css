@@ -79,7 +79,7 @@
       width: 123px;
       height: 17px;
       color: #FFF;
-      font-family: 'Open Sans', sans-serif;
+      
       font-size: 16.856px;
       font-style: normal;
       line-height: normal;
@@ -97,7 +97,6 @@
       margin-left: 4px;
       }
       .content-catalog{
-      @import url('https://fonts.googleapis.com/css2?   family=Open+Sans:wght@400;700;800&display=swap');
-      font-family: 'Open Sans', sans-serif;
+      
       margin-left: 4px;
       }
