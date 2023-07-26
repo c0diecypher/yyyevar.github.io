@@ -1,7 +1,7 @@
       body{
          overflow: auto;
          color: #FFF;
-         background: #171717;
+         background: var(--tg-theme-bg-color);
          display: flex;
          flex-direction: column;
          position: static;
