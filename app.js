@@ -10,7 +10,8 @@ let tg = window.Telegram.WebApp; //получаем объект webapp теле
 
    let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать 
 
-   btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+   btn.addEventListener('click', function(){ window.location.assign("item.html")//вешаем событие на нажатие html-кнопки
+}
       if (tg.MainButton.isVisible){ //если кнопка показана 
          tg.MainButton.hide() //скрываем кнопку 
       }
