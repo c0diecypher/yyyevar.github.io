@@ -36,10 +36,6 @@ let tg = window.Telegram.WebApp; //получаем объект webapp теле
       tg.sendData("some string that we need to send"); 
       //при клике на основную кнопку отправляем данные в строковом виде
    });
-   Telegram.WebApp.onEvent('backButtonClicked', function(){
-      if Telegram.WebApp.onEvent('mainButtonClicked'){
-   }
-
 
    let usercard = document.getElementById("usercard"); //получаем блок usercard 
 
