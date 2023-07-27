@@ -42,7 +42,7 @@
          @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
          font-family: 'Open Sans', sans-serif;
          font-weight: 700;
-         margin-top: 13px;
+         margin-top: 23px;
          margin-left: 14px;
          margin-right: 17px;
       
@@ -80,11 +80,11 @@
       .widget-text{
       text-decoration: none;
       margin-top: 10px;
-      margin-left: 4px;
+      margin-left: 6px;
       width: 123px;
       height: 17px;
       color: #FFF;
-      font-family: OpenSans;
+      font-family: 'Open Sans', sans-serif;
       font-size: 16.856px;
       font-style: normal;
       line-height: normal;
