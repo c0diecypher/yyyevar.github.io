@@ -38,14 +38,13 @@
          display: flex;
          width: 50px;
          height: 50px;
-         font-size: 15px;
+         font-size: 12px;
          @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
          font-family: 'Open Sans', sans-serif;
          font-weight: 700;
-         overflow: hidden;
-         text-overflow: ellipsis;
-         padding-top: 33px;
+         margin-top: 33px;
          margin-left: 14px;
+         margin-right: 17px;
       }
       .userphoto{
          background: #D9D9D9;
