@@ -1,19 +1,69 @@
- body{
-         display: flex;
+      body{
+         overflow: auto;
          color: #FFF;
          background: #171717;
+         display: flex;
          flex-direction: column;
-         font-size: 20px;
+         position: static;
          margin: 0;
-         padding: 0;
+      }
+.header{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+}
+      .hint{
+         color: var(--tg-theme-hint-color);
+      }
+      .link{
+         color: var(--tg-theme-link-color);
+      }
+      .button{
+         background: var(--tg-theme-button-color);
+         color: var(--tg-theme-button-text-color);
+         border: none;
+         font-size: 18px;
+         margin-top: 50px;
+      }
+      .button:not(:last-child){
+         margin-bottom: 50px
       }
       .container{
       display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      padding: 20px;
+      
       }
-      .tglogo{
+      .usercard{
+         display: flex;
+          width: auto;
+          height: 50px;
+       
+         margin-top: 14px;
+         padding: 0px;
+         border: 10px;
+         
+      }
+      .userphoto{
+         background: #D9D9D9;
+         width: 62px;
+         height: 62px;
+         margin-top: 12px;
+         margin-bottom: 17px;
+   
+         margin-right: 0px;
+         border-radius: 35px;
+         
+      }
+      .widget{
+      display: flex;
+      margin-top: 5%;
+      margin-left: auto;
+      border-radius: 35px;
+      background: rgba(62, 62, 62, 0.70);
+      width: 180px;
+      height: 42px;
+      }
+      .widget-logo{
       margin-top: 4px;
       margin-bottom: 4px;
       margin-left: 4px;
@@ -22,63 +72,26 @@
       width: 34px;
       height: 34px;
       }
- 
-      .hint{
-         color: #FFF;
-         margin-left: 100px;
+      .widget-text{
+      text-decoration: none;
+      margin-top: 10px;
+      margin-left: 4px;
+      width: 123px;
+      height: 17px;
+      color: #FFF;
+      font-family: OpenSans;
+      font-size: 16.856px;
+      font-style: normal;
+      line-height: normal;
+      text-transform: uppercase;
+      vertical-align: 80%;
       }
-
-      .link{
-         margin-left: 50px;
-         text-decoration: none;
-         color: #FFF;
-         font-family: OpenSans;
-         margin-top: 0px;
-      }
-
-      .button{
-         background: var(--tg-theme-button-color);
-         color: var(--tg-theme-button-text-color);
-         border: none;
-         font-size: 20px;
-      }
-      .button:not(:last-child){
-         margin-bottom: 15px
-      }
-
-
-  .tgchannel{
-       margin-left: 0px;
-       margin-top: 20px;
-       margin-tbottom: 27px;
-       border-radius: 18px;
-	     background: rgba(62, 62, 62, 0.70);
-	     width: 170px;
-	     height: 42px;
-}
-  .tgchanneltext{
-  margin-top: 150px;
-  width: 123px;
-  height: 17px;
-  color: #FFF;
-  font-family: OpenSans;
-  font-size: 16.856px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: uppercase;
-  display: down;
-  vertical-align: 80%;
-  text-decoration: none;
-}
-
-      .usercard{
-      margin-left: 50px;
-      margin-right: 150px;
-      margin-top: 50px;
-      weight: 20px;
-      height: 30px;
-      text-align: center;
-      border-radius: 25px;
-	    background: rgba(62, 62, 62, 0.70);
+      .search{
+      width: auto;
+      height: 42px;
+      flex-shrink: 0;
+      border-radius: 18px;
+      opacity: 0.5;
+      background: #3E3E3E;
+      margin-left: 4px;
       }
