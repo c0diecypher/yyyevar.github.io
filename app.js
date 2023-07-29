@@ -7,7 +7,6 @@ let tg = window.Telegram.WebApp; //получаем объект webapp теле
    tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
    tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
    tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
-   tg.BackButton();
    tg.enableClosingConfirmation(); 
       
    let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать 
