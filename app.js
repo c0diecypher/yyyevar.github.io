@@ -12,14 +12,11 @@ let tg = window.Telegram.WebApp; //получаем объект webapp теле
    let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать 
 
    btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-      if (tg.MainButton.isVisible;
-         tg.BackButton.isVisible;
-         document.location='new.html'){ //если кнопка показана 
+      if (tg.MainButton.isVisible){
+         document.location='new.html'//если кнопка показана 
          tg.MainButton.hide(); //скрываем кнопку
-         tg.BackButton.hide()
       }
       else{ //иначе
-         tg.BackButton.show();
          tg.MainButton.show() //показываем 
       }
    });
