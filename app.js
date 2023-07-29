@@ -7,18 +7,32 @@ let tg = window.Telegram.WebApp; //получаем объект webapp теле
    tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
    tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
    tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
+   tg.BackButton();
    tg.enableClosingConfirmation(); 
       
    let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать 
 
    btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-      if (tg.MainButton.isVisible){ //если кнопка показана 
-         tg.MainButton.hide() //скрываем кнопку 
+      if (tg.MainButton.isVisible;
+         tg.BackButton.isVisible;
+         document.location='new.html'){ //если кнопка показана 
+         tg.MainButton.hide(); //скрываем кнопку
+         tg.BackButton.hide()
       }
       else{ //иначе
+         tg.BackButton.show();
          tg.MainButton.show() //показываем 
       }
    });
+
+   // backbutton.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+    //  if (tg.MainButton.isVisible){ //если кнопка показана 
+    //     tg.MainButton.hide() //скрываем кнопку 
+    //  }
+    //  else{ //иначе
+    //     tg.MainButton.show() //показываем 
+   //   }
+  //  });
 
    let usercard = document.getElementById("usercard"); //получаем блок usercard 
 
