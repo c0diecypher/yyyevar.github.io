@@ -9,14 +9,15 @@ let tg = window.Telegram.WebApp; //получаем объект webapp теле
    tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
    tg.enableClosingConfirmation(); 
       
-   let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать 
+   let btn = document.getElementById("btn").onclick = function() {
+  window.location.href = 'new.html' //получаем кнопку скрыть/показать 
 
    btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-      if (tg.MainButton.isVisible){  //если кнопка показана 
-         tg.MainButton.hide() //скрываем кнопку
+      if (tg.BackButton.isVisible){  //если кнопка показана 
+         tg.BackButton.hide() //скрываем кнопку
       }
       else{ //иначе
-         tg.MainButton.show() //показываем 
+         tg.BackButton.show() //показываем 
       }
    });
 
