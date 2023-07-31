@@ -9,7 +9,7 @@ let tg = window.Telegram.WebApp; //получаем объект webapp теле
    tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
    tg.enableClosingConfirmation(); 
       
-   let btn = document.getElementById("btn") //получаем кнопку скрыть/показать 
+   let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать 
 
    btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
       if (tg.BackButton.isVisible){  //если кнопка показана 
