@@ -1,43 +1,28 @@
-let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
+const DemoApp = {
+        initData: Telegram.WebApp.initData || '',
+        initDataUnsafe: Telegram.WebApp.initDataUnsafe || {},
+        MainButton: Telegram.WebApp.MainButton,
+        BackButton: Telegram.WebApp.BackButton,
 
-   tg.expand(); //расширяем на все окно  
-
-   tg.MainButton.text = "Changed Text"; //изменяем текст кнопки 
-   tg.MainButton.setText("Changed Text1"); //изменяем текст кнопки иначе
-   tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
-   tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
-   tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
-   tg.enableClosingConfirmation(); 
-      
-   let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать 
-
-   btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-      if (tg.BackButton.isVisible){  //если кнопка показана 
-         tg.BackButton.hide() //скрываем кнопку
-      }
-      else{ //иначе
-         tg.BackButton.show() //показываем 
-      }
-   });
-
-   // backbutton.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-    //  if (tg.MainButton.isVisible){ //если кнопка показана 
-    //     tg.MainButton.hide() //скрываем кнопку 
-    //  }
-    //  else{ //иначе
-    //     tg.MainButton.show() //показываем 
-   //   }
-  //  });
-
-   let usercard = document.getElementById("usercard"); //получаем блок usercard 
-
-   let profName = document.createElement('p'); //создаем параграф
-   profName.innerText = `${tg.initDataUnsafe.user.username}`;
-   //выдем username
-   usercard.appendChild(profName); //добавляем 
-
-
-   //работает только в attachment menu
-   // let pic = document.createElement('img'); //создаем img
-   // pic.src = tg.initDataUnsafe.user.photo_url; //задаём src 
-   // usercard.appendChild(pic); //добавляем элемент в карточку 
+        init(options) {
+            document.body.style.visibility = '';
+            Telegram.WebApp.ready();
+            Telegram.WebApp.expand();
+            Telegram.WebApp.MainButton.setParams({
+                text: 'CLOSE WEBVIEW',
+                is_visible: true
+            }).onClick(DemoApp.close);
+        },
+        close() {
+            Telegram.WebApp.close();
+        },
+        toggleMainButton(el) {
+            const mainButton = Telegram.WebApp.MainButton;
+            if (mainButton.isVisible) {
+                mainButton.hide();
+                el.innerHTML = 'Show Main Button';
+            } else {
+                mainButton.show();
+                el.innerHTML = 'Hide Main Button';
+            }
+        },
