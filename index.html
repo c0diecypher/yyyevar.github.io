@@ -13,22 +13,17 @@
 	
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
-	button[disabled] {
-            opacity: 0.6;
-            cursor: auto;
-            pointer-events: none;
-        }
-
-        button.close_btn {
-            /*position: fixed;*/
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            border-radius: 0;
-            margin: 0;
-            padding: 16px 20px;
-            text-transform: uppercase;
+	button {
+            display: block;
+            width: 100%;
+            font-size: 14px;
+            margin: 15px 0;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: var(--tg-theme-button-color, #50a8eb);
+            color: var(--tg-theme-button-text-color, #ffffff);
+            cursor: pointer;
         }
    </style>
 <link rel="stylesheet" href="https://c0diecypher.github.io/yyyevar.github.io/style.css">
