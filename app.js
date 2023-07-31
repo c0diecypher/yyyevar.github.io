@@ -5,7 +5,6 @@ const DemoApp = {
 
         init(options) {
             document.body.style.visibility = '';
-            Telegram.WebApp.expand(); 
             Telegram.WebApp.ready();
             Telegram.WebApp.MainButton.setParams({
                 text: 'CLOSE WEBVIEW',
