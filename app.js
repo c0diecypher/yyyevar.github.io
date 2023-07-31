@@ -2,7 +2,6 @@ const DemoApp = {
         initData: Telegram.WebApp.initData || '',
         initDataUnsafe: Telegram.WebApp.initDataUnsafe || {},
         MainButton: Telegram.WebApp.MainButton,
-        BackButton: Telegram.WebApp.BackButton,
 
         init(options) {
             document.body.style.visibility = '';
