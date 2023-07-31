@@ -10,7 +10,7 @@ let tg = window.Telegram.WebApp; //получаем объект webapp теле
    tg.enableClosingConfirmation(); 
       
    let btn = document.getElementById("btn").onclick = function() {
-  window.location.href = 'new.html' //получаем кнопку скрыть/показать 
+  window.location.href = 'new.html'; //получаем кнопку скрыть/показать 
 
    btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
       if (tg.BackButton.isVisible){  //если кнопка показана 
