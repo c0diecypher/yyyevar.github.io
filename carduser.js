@@ -9,9 +9,8 @@ tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунд�
 tg.MainButton.setParams({ color: "#143F6B" }); //так изменяются все параметры
 tg.enableClosingConfirmation();
 
-const usercard = document.getElementById("usercard"); //получаем блок usercard
+let usercard = document.getElementById("usercard"); //получаем блок usercard
 
-const profName = document.createElement("p"); //создаем параграф
-profName.innerText = `${tg.initDataUnsafe.user.username}`;
-//выдем username
+let profName = document.createElement("p"); //создаем параграф
+profName.innerText = `${tg.initDataUnsafe.user.username}`; //выдем username
 usercard.appendChild(profName); //добавляем
