@@ -1,4 +1,4 @@
-let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
+const tg = window.Telegram.WebApp; //получаем объект webapp телеграма
 
 tg.expand(); //расширяем на все окно
 
@@ -9,9 +9,9 @@ tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунд�
 tg.MainButton.setParams({ color: "#143F6B" }); //так изменяются все параметры
 tg.enableClosingConfirmation();
 
-let usercard = document.getElementById("usercard"); //получаем блок usercard
+const usercard = document.getElementById("usercard"); //получаем блок usercard
 
-let profName = document.createElement("p"); //создаем параграф
+const profName = document.createElement("p"); //создаем параграф
 profName.innerText = `${tg.initDataUnsafe.user.username}`;
 //выдем username
 usercard.appendChild(profName); //добавляем
