@@ -17,5 +17,5 @@ usercard.appendChild(profName); //добавляем
 
 let userphoto = document.getElementById("userphoto"); //получаем блок usercard
 let pic = document.createElement('img'); //создаем img
-pic.src = `${tg.initDataUnsafe.user.photo_url}`; //задаём src 
+pic.src = ${tg.initDataUnsafe.user.photo_url}; //задаём src 
 userphoto.appendChild(pic); //добавляем элемент в карточку 
