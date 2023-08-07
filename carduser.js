@@ -15,7 +15,7 @@ let profName = document.createElement("p"); //создаем параграф
 profName.innerText = `${tg.initDataUnsafe.user.username}`; //выдем username
 usercard.appendChild(profName); //добавляем
 
-let usercard = document.getElementById("userphoto"); //получаем блок usercard
+let userphoto = document.getElementById("userphoto"); //получаем блок usercard
 let pic = document.createElement('img'); //создаем img
 pic.src = `${tg.initDataUnsafe.user.photo_url}`; //задаём src 
 userphoto.appendChild(pic); //добавляем элемент в карточку 
