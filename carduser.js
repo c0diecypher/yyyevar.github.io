@@ -1,6 +1,7 @@
 let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
+window.Telegram.WebAppUser;
 tg.expand(); //расширяем на все окно
-tg.ready() // метод позволяет отследить, когда приложение готово к отображению.
+tg.ready(); // метод позволяет отследить, когда приложение готово к отображению.
 tg.MainButton.text = "Changed Text"; //изменяем текст кнопки
 tg.MainButton.setText("Changed Text1"); //изменяем текст кнопки иначе
 tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
