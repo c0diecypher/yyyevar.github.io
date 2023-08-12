@@ -13,7 +13,7 @@ tg.enableClosingConfirmation();
 let usercard = document.getElementById("usercard"); //получаем блок usercard
 
 let profName = document.createElement("p"); //создаем параграф
-profName.innerText = `${tg.initDataUnsafe.user.username}`; //выдем username
+profName.innerText = `${tg.initDataUnsafe.user.first_name}`; //выдем username
 usercard.appendChild(profName); //добавляем
 
 let pic = document.getElementById('userphoto').setAttribute('src', tg.initDataUnsafe.user.photo_url);
