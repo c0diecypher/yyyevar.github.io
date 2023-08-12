@@ -20,4 +20,4 @@ let pic = document.getElementById('userphoto').setAttribute('src', tg.initDataUn
 pic.src = `${tg.initDataUnsafe.user.photo_url}`;
 userphoto.appendChild(pic);
 
-  
+ window.Telegram.WebApp.ready();
