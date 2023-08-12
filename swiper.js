@@ -95,7 +95,7 @@ let slider = document.querySelector('.slider'),
           setTransform(transform, lastTrf);
           return;
         } else {
-          allowSwipe = true;
+          allowSwipe = false;
         }
       }
 
