@@ -9,17 +9,6 @@ tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунд�
 tg.MainButton.setParams({ color: "#143F6B" }); //так изменяются все параметры
 tg.enableClosingConfirmation();
 
-let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать 
-
-   btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-      if (tg.MainButton.isVisible){ //если кнопка показана 
-         tg.MainButton.hide() //скрываем кнопку 
-      }
-      else{ //иначе
-         tg.MainButton.show() //показываем 
-      }
-   });
-
 let usercard = document.getElementById("usercard"); //получаем блок usercard
 
 let profName = document.createElement("p"); //создаем параграф
