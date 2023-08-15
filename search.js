@@ -1,9 +1,9 @@
 function mySearch() {
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.querySelector("#search");
-  filter = input.value.toUpperCase();
-  ul = document.querySelector(".card-container");
-  li = ul.getElementsByTagName("li");
+  let input, filter, ul, li, a, i, txtValue;
+   input = document.querySelector("#search");
+   filter = input.value.toUpperCase();
+   ul = document.querySelector(".card-container");
+   li = ul.getElementsByTagName("li");
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
