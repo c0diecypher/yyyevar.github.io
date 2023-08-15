@@ -1,5 +1,5 @@
 function mySearch() {
-  let input, filter, ul, li, a, i, txtValue;
+  var input, filter, ul, li, a, i, txtValue;
    input = document.querySelector("#search");
    filter = input.value.toUpperCase();
    ul = document.querySelector(".card-container");
