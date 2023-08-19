@@ -6,7 +6,7 @@ tg.MainButton.text = "Купить"; //изменяем текст кнопки
 tg.MainButton.setText("Купить"); //изменяем текст кнопки иначе
 tg.MainButton.textColor = "#ffffff"; //изменяем цвет текста кнопки
 tg.MainButton.color = "#00BA78"; //изменяем цвет бэкграунда кнопки
-tg.MainButton.setParams({ color: "#143F6B" }); //так изменяются все параметры
+tg.MainButton.setParams({ color: "#00BA78" }); //так изменяются все параметры
 tg.enableClosingConfirmation();
 
 let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать 
