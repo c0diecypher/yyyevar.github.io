@@ -3,7 +3,7 @@ let tg = window.Telegram.WebApp; //получаем объект webapp теле
 tg.expand(); //расширяем на все окно
 
 tg.MainButton.text = "Купить"; //изменяем текст кнопки
-tg.MainButton.setText("Купить"); //изменяем текст кнопки иначе
+tg.MainButton.setText("Купить1"); //изменяем текст кнопки иначе
 tg.MainButton.textColor = "#ffffff"; //изменяем цвет текста кнопки
 tg.MainButton.color = "#00BA78"; //изменяем цвет бэкграунда кнопки
 tg.MainButton.setParams({ color: "#00BA78" }); //так изменяются все параметры
